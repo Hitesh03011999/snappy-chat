@@ -106,9 +106,9 @@ function loadMessages(chat_id,fn) {
 }
 function renderMessage(message) {
   var text = message.text;
-  var msgClass = "";
+  var msgClass = "message";
   if(message.sender_id== window.currentUser.id){
-    msgClass="by-user";
+    msgClass+=" by-user";
   }
   var html = '<div class="' + msgClass +'">' + text + '</div>';
 return html;
