@@ -9,79 +9,41 @@
   <body>
     <div class="member-area">
         <div class="user-info">
-          Hitesh Pardasani
+        <span id="username"> </span>
           <span class="logout">Log out</span>
         </div>
-        <div class = "members">
-            <div class="member">
-                Sagar
-            </div>
-            <div class="member active">
-                Mohit
-            </div>
-            <div class="member">
-                Rohan
-            </div>
-            <div class="member">
-                Sumeet
-            </div>
+        <div class = "members" id="members">
+
         </div>
     </div>
     <div class="message-area">
         <div class="chat-info">
             Mohit
         </div>
-        <div class="messages">
-        <div class="message">
-          Hey.. kkrh?
-        </div>
-        <div class="message by-user">
-          Tp
-        </div>
-        <div class="message">
-          Main bhi!!!!!
-        </div>
-        <div class="message">
-          Hey.. kkrh?
-        </div>
-        <div class="message by-user">
-          Tp
-        </div>
-        <div class="message">
-          Main bhi!!!!!
-        </div>
-        <div class="message">
-          Hey.. kkrh?
-        </div>
-        <div class="message by-user">
-          Tp
-        </div>
-        <div class="message">
-          Main bhi!!!!!
-        </div>
-        <div class="message">
-          Hey.. kkrh?
-        </div>
-        <div class="message by-user">
-          Tp
-        </div>
-        <div class="message">
-          Main bhi!!!!!
-        </div>
-        <div class="message">
-          Hey.. kkrh?
-        </div>
-        <div class="message by-user">
-          Tp
-        </div>
-        <div class="message">
-          Main bhi!!!!!
-        </div>
+        <div class="messages" id="messages">
+
       </div>
       <div class="chat-form">
-<input type="text" class="chat-message"
+        <input type="hidden" id="chat_id"/>
+<input type="text" id="message-text" class="chat-message"
 placeholder="Write your message here and press Enter...."/>
+<button id="send-button">Send</button>
       </div>
     </div>
+    <script src="https://www.gstatic.com/firebasejs/3.6.7/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBRvyfLhM-x9kCAxcwbPrnIEIpd0Wf9gTE",
+        authDomain: "snappychat-68e15.firebaseapp.com",
+        databaseURL: "https://snappychat-68e15.firebaseio.com",
+        storageBucket: "snappychat-68e15.appspot.com",
+        messagingSenderId: "497975042263"
+      };
+      firebase.initializeApp(config);
+    </script>
+      <script type="text/javascript" src="functions.js"></script>
+      <script type="text/javascript" src="app.js"></script>
+      <script type="text/javascript" src="chat.js"></script>
   </body>
   </html>
