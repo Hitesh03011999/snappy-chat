@@ -28,6 +28,7 @@ getElement("members").innerHTML = usersList;
     getElement("chat_id").value = chat_id;
   });
   click("send-button",function(){
+    console.log("send button clicked");
     var text = getElement("message-text").value;
     var chat_id = getElement("chat_id").value;
 
